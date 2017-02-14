@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Degree Evaluation</title>
+        <link href="../css/degreeCheck.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div id="degreeEval">
+
+        <span><font size="6">Computer Science Degree Evaluation</font></span>
+        <br></br>
+
+        <span>Enter the grade for every class you've taken below:</span><br></br>
+        <br></br>
+
+        <form onsubmit="submitClasses()" action="degreeResult.html">
+            CS111<br>
+            <select id="cs111">
+                <option selected="selected">Not Taken</option>
+                <option value='a'>A</option>
+                <option value='b'>B</option>
+                <option value='c'>C</option>
+                <option value='d'>D</option>
+                <option value='f'>F</option>
+            </select>
+            <br>CS140<br>
+            <select id="cs140">
+                <option selected="selected">Not Taken</option>
+                <option value=4>A</option>
+                <option value=3>B</option>
+                <option value=2>C</option>
+                <option value=1>D</option>
+                <option value=0>F</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+
+        <br></br>
+
+        <div id="error"></div>
+
+        </div>
+
+        <script src="../degreeCheck.js"></script>
