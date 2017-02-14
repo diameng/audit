@@ -19,8 +19,8 @@ var cs150 = {
 
 function submitClasses() {
 
-    cs111.grade = document.getElementById('cs111').value;
-    document.getElementById("error").innerHTML = cs111.grade;
+    cs111.grade = document.getElementById("cs111").value;
+    document.getElementById("error").innerText = cs111.grade;
 }
 
 function evaluateDegree() {
